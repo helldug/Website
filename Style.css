@@ -1,0 +1,43 @@
+body {
+	background-color: #fffde0;
+	
+}
+
+.pagetitle {
+	
+	position:fixed;
+	text-align:center;
+	margin: auto;
+	width: 100%;
+	color: #510000;
+	text-decoration: underline;
+	font-family: Helvetica;
+	font-size: 30px;
+}
+
+#top, #bottom, #left, #right {
+	background: #510000;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		
+		#left {left: 0;
+		}
+		
+		#right {right: 0;
+		}
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		
+		#top {top: 0;
+		}
+		
+		#bottom {bottom: 0;
+		}
+		
