@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="JS/script.js"></script> 
+    <style>
+          
+
+.preview{
+    margin-top: 100px;
+    float: left;
+  background: #333;
+  width: 415px;
+  height: 430px;
+  border: solid 10px #222;
+}
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 25px;
+  height: 25px;
+  margin: 5px 0 5px 5px;
+  background-size: 225px 70px;
+  position: relative;
+  float: left;
+  display: inline;
+  top: 0;
+  border-radius: 3px;
+  z-index: 99999;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000;
+}
+
+input[type='radio']:hover{
+  -webkit-filter: opacity(.4);
+  filter: opacity(.4);    
+}
+
+.red{
+  background: red;
+}
+
+.red:checked{
+  background: linear-gradient(brown, red)
+}
+
+.green{
+  background: green;
+}
+
+.green:checked{
+  background: linear-gradient(green, lime);
+}
+
+.yellow{
+  background: yellow;
+}
+
+.yellow:checked{
+  background: linear-gradient(orange, yellow);
+}
+
+.purple{
+  background: purple;
+}
+
+.blue{
+  background: blue;
+}
+
+.white{
+  background: white;
+}
+
+.orange{
+  background: orange;
+}
+
+.pink{
+  background: pink;
+}
+
+.cyan{
+  background: cyan;
+}
+
+
+.purple:checked{
+  background: linear-gradient(purple, violet);
+}
+
+.red:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 red);
+  filter: opacity(.5) drop-shadow(0 0 0 red);
+}
+
+.green:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 green);
+  filter: opacity(.5) drop-shadow(0 0 0 green);
+}
+
+.yellow:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 yellow);
+  filter: opacity(.5) drop-shadow(0 0 0 yellow);
+}
+
+.purple:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 purple);
+  filter: opacity(.5) drop-shadow(0 0 0 purple);
+}
+
+.blue:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 blue);
+  filter: opacity(.5) drop-shadow(0 0 0 blue);
+}
+
+.white:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 white);
+  filter: opacity(.5) drop-shadow(0 0 0 white);
+}
+
+.orange:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 orange);
+  filter: opacity(.5) drop-shadow(0 0 0 orange);
+}
+
+.pink:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 pink);
+  filter: opacity(.5) drop-shadow(0 0 0 pink);
+}
+
+.cyan:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 cyan);
+  filter: opacity(.5) drop-shadow(0 0 0 cyan);
+}
+img{
+  width: 394px;
+  height: 375px;
+  position: relative;
+}
+
+.label{
+  width: 150px;
+  height: 75px;
+  position: absolute;
+  top: 170px;
+  margin-left: 130px;
+}
+
+::selection{
+  background: #000;
+}
+    </style>
+</head>
+    
+<body bgcolor="#404040">
+
+     <ul>
+    <li><a href="index.html"><img src="Rescources/RageModeLogo.png" style="width:auto;height:30px;border:0;"></a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="Customizer.html">Customizer</a></li>
+  <li><a href="Faq.html">FAQ</a></li>
+</ul>  
+    
+    
+    <h1> Customizer </h1>
+    
+     <h1> Customizer </h1>
+
+    <p class="customizer"> Welcome to the customizer page, here you can preview some different colours that you can apply to the headset. </p>
+
+    <div class="preview">
+  <input class='red' name='color' type='radio' />
+  <input class='green' name='color' type='radio' />
+    <input class='blue' name='color' type='radio' />
+  <input checked class='yellow' name='color' type='radio' />
+  <input class='purple' name='color' type='radio' />  
+    <input class='white' name='color' type='radio' />
+    <input class='orange' name='color' type='radio' />
+    <input class='pink' name='color' type='radio' />
+    <input class='cyan' name='color' type='radio' />
+  <img src="Rescources/TransparentHeadset.png"/>
+</div>
+  
+
+
+    
+</body>
+</html>
